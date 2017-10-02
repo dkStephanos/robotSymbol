@@ -1,0 +1,54 @@
+<assets>
+  <shaders>
+    <vertexShaders>
+      SimpleVertexShader
+      VertexShader3d, VertexShader3DPerspective.glsl
+      VertexShaderIllumination, VertexShader3DIllumination.glsl
+      VertexShaderTexture, VertexShaderTexture.glsl
+      VertexShaderText, VertexShaderText.glsl
+    </vertexShaders>
+    <fragmentShaders>
+      SimpleFragmentShader
+      FragmentShaderIllumination, FragmentShader3DIllumination.glsl
+      FragmentShaderTexture, FragmentShaderTexture.glsl
+      FragmentShaderText, FragmentShaderText.glsl
+    </fragmentShaders>
+    <shaderPrograms>
+      SimpleShader, SimpleVertexShader, SimpleFragmentShader
+      ShaderProgram3d, VertexShader3d, SimpleFragmentShader
+      ShaderProgramIllumination, VertexShaderIllumination, FragmentShaderIllumination
+      TextureShader, VertexShaderTexture, FragmentShaderTexture
+      TextShader, VertexShaderText, FragmentShaderText
+    </shaderPrograms>
+  </shaders>
+  <uniforms>
+    ShaderProgram3d, cameraToScreenMatrix, Matrix4
+    ShaderProgram3d, worldToCameraMatrix, Matrix4
+    ShaderProgram3d, localToWorldMatrix, Matrix4
+    ShaderProgramIllumination, worldGlobalLightPos, Vector3
+    ShaderProgramIllumination, globalLightIntensity, Float
+    ShaderProgramIllumination, lightPositions, Vector3Array
+    ShaderProgramIllumination, numberOfLights, Integer
+    ShaderProgramIllumination, worldCameraPos, Vector3
+    ShaderProgramIllumination, cameraToScreenMatrix, Matrix4
+    ShaderProgramIllumination, worldToCameraMatrix, Matrix4
+    ShaderProgramIllumination, localToWorldMatrix, Matrix4
+    ShaderProgramIllumination, materialAmbientIntensity, Float
+    ShaderProgramIllumination, materialShininess, Float
+    ShaderProgramIllumination, materialSpecular, Vector4
+    ShaderProgramIllumination, lightIntensities, FloatArray
+    TextureShader, worldGlobalLightPos, Vector3
+    TextureShader, globalLightIntensity, Float
+    TextureShader, lightPositions, Vector3Array
+    TextureShader, numberOfLights, Integer
+    TextureShader, worldCameraPos, Vector3
+    TextureShader, cameraToScreenMatrix, Matrix4
+    TextureShader, worldToCameraMatrix, Matrix4
+    TextureShader, localToWorldMatrix, Matrix4
+    TextureShader, materialAmbientIntensity, Float
+    TextureShader, materialShininess, Float
+    TextureShader, materialSpecular, Vector4
+    TextureShader, lightIntensities, FloatArray
+    TextureShader, tex, Sampler2D
+  </uniforms>
+</assets>

@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{335E30C9-63D8-4FA2-850F-B40A0C974D4B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>RobotSymbol</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\3DGE\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\3DGE\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\3DGE\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\3DGE\PropertySheet.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\Users\Stephanos\Documents\3DGE\glew-1.13.0\include;C:\Users\Stephanos\Documents\3DGE\glsdk_0_5_2\glm;C:\Users\Stephanos\Documents\3DGE\glsdk_0_5_2\glutil\include;C:\Users\Stephanos\Documents\3DGE\glsdk_0_5_2\boost;</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86;C:\Users\Stephanos\Documents\3DGE\glew-1.13.0\lib\Release\Win32;C:\Users\Stephanos\Documents\3DGE\glsdk_0_5_2\glutil\lib;</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Image Include="crate.bmp" />
+    <Image Include="darkmetal.bmp" />
+    <Image Include="diamond.bmp" />
+    <Image Include="Enemy.bmp" />
+    <Image Include="gold.bmp" />
+    <Image Include="grass.bmp" />
+    <Image Include="Grid.bmp" />
+    <Image Include="ground.bmp" />
+    <Image Include="guntex.bmp" />
+    <Image Include="laser.bmp" />
+    <Image Include="letters.bmp" />
+    <Image Include="lightmetal.bmp" />
+    <Image Include="lose.bmp" />
+    <Image Include="mars.bmp" />
+    <Image Include="Player.bmp" />
+    <Image Include="red.bmp" />
+    <Image Include="redcloud.bmp" />
+    <Image Include="RobotFace.bmp" />
+    <Image Include="robotSymbol.bmp" />
+    <Image Include="roof.bmp" />
+    <Image Include="spaceRoof.bmp" />
+    <Image Include="spaceWall.bmp" />
+    <Image Include="test.bmp" />
+    <Image Include="wall.bmp" />
+    <Image Include="win.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Arm.h" />
+    <ClInclude Include="AssetLoader.h" />
+    <ClInclude Include="Axis.h" />
+    <ClInclude Include="BackForthBehavior.h" />
+    <ClInclude Include="BaseCuboid.h" />
+    <ClInclude Include="BaseObject.h" />
+    <ClInclude Include="BaseShader.h" />
+    <ClInclude Include="BMPTextureLoader.h" />
+    <ClInclude Include="BoundingBox.h" />
+    <ClInclude Include="BoundingSphere.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="Construct.h" />
+    <ClInclude Include="CoreSystem.h" />
+    <ClInclude Include="Cuboid.h" />
+    <ClInclude Include="CustomTexture.h" />
+    <ClInclude Include="Diamond.h" />
+    <ClInclude Include="FallBackBehavior.h" />
+    <ClInclude Include="Flyer.h" />
+    <ClInclude Include="GameAssetLoader.h" />
+    <ClInclude Include="GameEngine.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="GameObjectManager.h" />
+    <ClInclude Include="GameWindow.h" />
+    <ClInclude Include="GameWorld.h" />
+    <ClInclude Include="GenericWindow.h" />
+    <ClInclude Include="GraphicsSystem.h" />
+    <ClInclude Include="GridSurface.h" />
+    <ClInclude Include="IBehavior.h" />
+    <ClInclude Include="ITextureLoader.h" />
+    <ClInclude Include="ITimer.h" />
+    <ClInclude Include="LightSource.h" />
+    <ClInclude Include="LineBox.h" />
+    <ClInclude Include="Logger.h" />
+    <ClInclude Include="MathUtil.h" />
+    <ClInclude Include="MountainRange.h" />
+    <ClInclude Include="ObjectGenerator.h" />
+    <ClInclude Include="OGL2DHUD.h" />
+    <ClInclude Include="OGL2DTextDisplay.h" />
+    <ClInclude Include="OGL2DTexture.h" />
+    <ClInclude Include="OGL3DCompositeObject.h" />
+    <ClInclude Include="OGL3DObject.h" />
+    <ClInclude Include="OGLArrayBuffer.h" />
+    <ClInclude Include="OGLBaseShader.h" />
+    <ClInclude Include="OGLBufferedObject.h" />
+    <ClInclude Include="OGLCompositeFlatSurface.h" />
+    <ClInclude Include="OGLElementArrayBuffer.h" />
+    <ClInclude Include="OGLFirstPersonCamera.h" />
+    <ClInclude Include="OGLFontTexture.h" />
+    <ClInclude Include="OGLFragmentShader.h" />
+    <ClInclude Include="OGLGameObject.h" />
+    <ClInclude Include="OGLGraphicsSystem.h" />
+    <ClInclude Include="OGLObject.h" />
+    <ClInclude Include="OGLReferenceFrame.h" />
+    <ClInclude Include="OGLReferenceFrameStack.h" />
+    <ClInclude Include="OGLShaderCompiler.h" />
+    <ClInclude Include="OGLShaderManager.h" />
+    <ClInclude Include="OGLShaderProgram.h" />
+    <ClInclude Include="OGLSphericalCamera.h" />
+    <ClInclude Include="OGLTexturedFlatSurface.h" />
+    <ClInclude Include="OGLVertexShader.h" />
+    <ClInclude Include="OGLViewingFrustum.h" />
+    <ClInclude Include="PCInputSystem.h" />
+    <ClInclude Include="Plane.h" />
+    <ClInclude Include="Pyramid.h" />
+    <ClInclude Include="RGBA.h" />
+    <ClInclude Include="RotateYBehavior.h" />
+    <ClInclude Include="ShaderManager.h" />
+    <ClInclude Include="ShakeBehavior.h" />
+    <ClInclude Include="Soldier.h" />
+    <ClInclude Include="SpaceShuttle.h" />
+    <ClInclude Include="SpaceShuttleBehavior.h" />
+    <ClInclude Include="Sphere.h" />
+    <ClInclude Include="StockObjectLoader.h" />
+    <ClInclude Include="Sword.h" />
+    <ClInclude Include="Tank.h" />
+    <ClInclude Include="TextFileReader.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="TexturedCuboid.h" />
+    <ClInclude Include="TextureManager.h" />
+    <ClInclude Include="TheGame.h" />
+    <ClInclude Include="Turret.h" />
+    <ClInclude Include="Uniform.h" />
+    <ClInclude Include="ViewingFrustum.h" />
+    <ClInclude Include="Win32OGLWindow.h" />
+    <ClInclude Include="Win32Window.h" />
+    <ClInclude Include="WindowsConsoleLogger.h" />
+    <ClInclude Include="WindowsTimer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AssetLoader.cpp" />
+    <ClCompile Include="Axis.cpp" />
+    <ClCompile Include="BackForthBehavior.cpp" />
+    <ClCompile Include="BaseCuboid.cpp" />
+    <ClCompile Include="BaseObject.cpp" />
+    <ClCompile Include="BaseShader.cpp" />
+    <ClCompile Include="Behavior.cpp" />
+    <ClCompile Include="BMPTextureLoader.cpp" />
+    <ClCompile Include="BoundingBox.cpp" />
+    <ClCompile Include="BoundingSphere.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Construct.cpp" />
+    <ClCompile Include="CoreSystem.cpp" />
+    <ClCompile Include="Cuboid.cpp" />
+    <ClCompile Include="CustomTexture.cpp" />
+    <ClCompile Include="Diamond.cpp" />
+    <ClCompile Include="FallBackBehavior.cpp" />
+    <ClCompile Include="Flyer.cpp" />
+    <ClCompile Include="GameAssetLoader.cpp" />
+    <ClCompile Include="GameEngine.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="GameObjectManager.cpp" />
+    <ClCompile Include="GameWindow.cpp" />
+    <ClCompile Include="GameWorld.cpp" />
+    <ClCompile Include="GenericWindow.cpp" />
+    <ClCompile Include="GraphicsSystem.cpp" />
+    <ClCompile Include="GridSurface.cpp" />
+    <ClCompile Include="ITextureLoader.cpp" />
+    <ClCompile Include="ITimer.cpp" />
+    <ClCompile Include="LightSource.cpp" />
+    <ClCompile Include="LineBox.cpp" />
+    <ClCompile Include="Logger.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MathUtil.cpp" />
+    <ClCompile Include="MountainRange.cpp" />
+    <ClCompile Include="ObjectGenerator.cpp" />
+    <ClCompile Include="OGL2DHUD.cpp" />
+    <ClCompile Include="OGL2DTextDisplay.cpp" />
+    <ClCompile Include="OGL2DTexture.cpp" />
+    <ClCompile Include="OGL3DCompositeObject.cpp" />
+    <ClCompile Include="OGL3DObject.cpp" />
+    <ClCompile Include="OGLArrayBuffer.cpp" />
+    <ClCompile Include="OGLBaseShader.cpp" />
+    <ClCompile Include="OGLBufferedObject.cpp" />
+    <ClCompile Include="OGLCompositeFlatSurface.cpp" />
+    <ClCompile Include="OGLElementArrayBuffer.cpp" />
+    <ClCompile Include="OGLFirstPersonCamera.cpp" />
+    <ClCompile Include="OGLFontTexture.cpp" />
+    <ClCompile Include="OGLFragmentShader.cpp" />
+    <ClCompile Include="OGLGameObject.cpp" />
+    <ClCompile Include="OGLGraphicsSystem.cpp" />
+    <ClCompile Include="OGLObject.cpp" />
+    <ClCompile Include="OGLReferenceFrame.cpp" />
+    <ClCompile Include="OGLReferenceFrameStack.cpp" />
+    <ClCompile Include="OGLShaderCompiler.cpp" />
+    <ClCompile Include="OGLShaderManager.cpp" />
+    <ClCompile Include="OGLShaderProgram.cpp" />
+    <ClCompile Include="OGLSphericalCamera.cpp" />
+    <ClCompile Include="OGLTexturedFlatSurface.cpp" />
+    <ClCompile Include="OGLVertexShader.cpp" />
+    <ClCompile Include="OGLViewingFrustum.cpp" />
+    <ClCompile Include="PCInputSystem.cpp" />
+    <ClCompile Include="Plane.cpp" />
+    <ClCompile Include="Pyramid.cpp" />
+    <ClCompile Include="RotateYBehavior.cpp" />
+    <ClCompile Include="ShaderManager.cpp" />
+    <ClCompile Include="ShakeBehavior.cpp" />
+    <ClCompile Include="Soldier.cpp" />
+    <ClCompile Include="SpaceShuttle.cpp" />
+    <ClCompile Include="SpaceShuttleBehavior.cpp" />
+    <ClCompile Include="Sphere.cpp" />
+    <ClCompile Include="StockObjectLoader.cpp" />
+    <ClCompile Include="Sword.cpp" />
+    <ClCompile Include="Tank.cpp" />
+    <ClCompile Include="TextFileReader.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="TexturedCuboid.cpp" />
+    <ClCompile Include="TextureManager.cpp" />
+    <ClCompile Include="TheGame.cpp" />
+    <ClCompile Include="Turret.cpp" />
+    <ClCompile Include="Uniform.cpp" />
+    <ClCompile Include="ViewingFrustum.cpp" />
+    <ClCompile Include="Win32OGLWindow.cpp" />
+    <ClCompile Include="Win32Window.cpp" />
+    <ClCompile Include="WindowsConsoleLogger.cpp" />
+    <ClCompile Include="WindowsTimer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FragmentShader3DIllumination.glsl" />
+    <None Include="FragmentShaderText.glsl" />
+    <None Include="FragmentShaderTexture.glsl" />
+    <None Include="GameAssets.data" />
+    <None Include="ShaderAssets.data">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VertexShader3DIllumination.glsl" />
+    <None Include="VertexShader3DPerspective.glsl" />
+    <None Include="VertexShaderText.glsl" />
+    <None Include="VertexShaderTexture.glsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Flyer.txt" />
+    <Text Include="MountainRange.txt" />
+    <Text Include="SpaceShuttle.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

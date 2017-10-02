@@ -1,0 +1,468 @@
+<assets>
+  <textures>
+    BMP, letters.bmp, Letters
+    BMP, crate.bmp, CrateTex
+    BMP, ground.bmp, FloorTex
+    BMP, wall.bmp, WallTex
+    BMP, roof.bmp, RoofTex
+    BMP, grass.bmp, GrassTex
+    BMP, spaceRoof.bmp, SpaceRoofTex
+    BMP, spaceWall.bmp, SpaceWallTex
+    BMP, mars.bmp, MarsTex
+    BMP, diamond.bmp, DiamondTex
+    BMP, darkmetal.bmp, DarkMetalTex
+    BMP, gold.bmp, GoldTex
+    BMP, guntex.bmp, GunTex
+    BMP, lightmetal.bmp, LightMetalTex
+    BMP, Grid.bmp, GridTex
+    BMP, red.bmp, RedTex
+    BMP, robotSymbol.bmp, RobotSymbolTex
+    BMP, Player.bmp, PlayerTex
+    BMP, Enemy.bmp, EnemyTex
+    BMP, RobotFace.bmp, RobotFaceTex
+    BMP, laser.bmp, LaserTex
+    BMP, win.bmp, WinTex
+    BMP, lose.bmp, LoseTex
+  </textures>
+  <gameobjects>
+    <localLightSources>
+      0.0f, 10.0f, 9.0f, 0.45f
+      0.0f, 10.0f, -9.0f, 0.45f
+    </localLightSources>
+    
+    <grid>
+      <name>
+        Grid
+      </name>
+      <width>
+        1.80f
+      </width>
+      <depth>
+        1.80f
+      </depth>
+      <widthSegments>
+        1.8
+      </widthSegments>
+      <depthSegments>
+        1.8
+      </depthSegments>
+      <color>
+        1.0f, 1.0f, 1.0f, 1.0f
+      </color>
+      <textureName>
+        GridTex
+      </textureName>
+      <shaderName>
+        TextureShader
+      </shaderName>
+    </grid>
+
+    
+    <soldier>
+      <name>
+        PlayerSoldier
+      </name>
+      <shaderName>
+        TextureShader
+      </shaderName>
+      <darkMetalTexture>
+        DarkMetalTex
+      </darkMetalTexture>
+      <lightMetalTexture>
+        LightMetalTex
+      </lightMetalTexture>
+      <goldTexture>
+        GoldTex
+      </goldTexture>
+      <gunTexture>
+        GunTex
+      </gunTexture>
+      <laserTexture>
+        LaserTex
+      </laserTexture>
+    </soldier>
+
+    <tank>
+      <name>
+        PlayerTank
+      </name>
+      <shaderName>
+        TextureShader
+      </shaderName>
+      <textureName>
+        LightMetalTex
+      </textureName>
+      <lazerTextureName>
+        LightMetalTex
+      </lazerTextureName>
+    </tank>
+
+    <flyer>
+      <name>
+        PlayerFlyer
+      </name>
+      <shaderName>
+        TextureShader
+      </shaderName>
+      <robotTexture>
+        LightMetalTex
+      </robotTexture>
+      <faceTexture>
+        RobotFaceTex
+      </faceTexture>
+      <laserTexture>
+        LaserTex
+      </laserTexture>
+    </flyer>
+    
+    <soldier>
+      <name>
+        EnemySoldier
+      </name>
+      <shaderName>
+        TextureShader
+      </shaderName>
+      <darkMetalTexture>
+        DarkMetalTex
+      </darkMetalTexture>
+      <lightMetalTexture>
+        LightMetalTex
+      </lightMetalTexture>
+      <goldTexture>
+        GoldTex
+      </goldTexture>
+      <gunTexture>
+        GunTex
+      </gunTexture>
+      <laserTexture>
+        LaserTex
+      </laserTexture>
+    </soldier>
+
+    <tank>
+      <name>
+        EnemyTank
+      </name>
+      <shaderName>
+        TextureShader
+      </shaderName>
+      <textureName>
+        LightMetalTex
+      </textureName>
+      <lazerTextureName>
+        LightMetalTex
+      </lazerTextureName>
+    </tank>
+
+    <flyer>
+      <name>
+        EnemyFlyer
+      </name>
+      <shaderName>
+        TextureShader
+      </shaderName>
+      <robotTexture>
+        LightMetalTex
+      </robotTexture>
+      <faceTexture>
+        RobotFaceTex
+      </faceTexture>
+      <laserTexture>
+        LaserTex
+      </laserTexture>
+    </flyer>
+    
+     <otfs>
+      <name>
+        WinPlat
+      </name>
+      <width>
+        20.0f
+      </width>
+      <depth>
+        20.0f
+      </depth>
+      <widthSegments>
+        1
+      </widthSegments>
+      <depthSegments>
+        1
+      </depthSegments>
+      <color>
+        1.0f, 1.0f, 1.0f, 1.0f
+      </color>    
+      <textureName>
+        WinTex
+      </textureName>
+      <shaderName>
+        TextureShader
+      </shaderName>
+    </otfs>
+      
+    <otfs>
+      <name>
+        LosePlat
+      </name>
+      <width>
+        20.0f
+      </width>
+      <depth>
+        20.0f
+      </depth>
+      <widthSegments>
+        1
+      </widthSegments>
+      <depthSegments>
+        1
+      </depthSegments>
+      <color>
+        1.0f, 1.0f, 1.0f, 1.0f
+      </color>    
+      <textureName>
+        LoseTex
+      </textureName>
+      <shaderName>
+        TextureShader
+      </shaderName>
+    </otfs>
+      
+    <otfs>
+      <name>
+        Floor
+      </name>
+      <width>
+        52.0f
+      </width>
+      <depth>
+        52.0f
+      </depth>
+      <widthSegments>
+        6
+      </widthSegments>
+      <depthSegments>
+        6
+      </depthSegments>
+      <color>
+        0.6f, 0.0f, 0.0f, 1.0f
+      </color>    
+      <textureName>
+        MarsTex
+      </textureName>
+      <shaderName>
+        TextureShader
+      </shaderName>
+    </otfs>
+    
+     <otfs>
+      <name>
+        Roof
+      </name>
+      <width>
+        52.0f
+      </width>
+      <depth>
+        52.0f
+      </depth>
+      <widthSegments>
+        1
+      </widthSegments>
+      <depthSegments>
+        1
+      </depthSegments>
+      <color>
+        1.0f, 1.0f, 1.0f, 1.0f
+      </color>  
+      <textureName>
+        SpaceRoofTex
+      </textureName>
+      <shaderName>
+        TextureShader
+      </shaderName>
+    </otfs>
+    
+   <otfs>
+      <name>
+        Front Wall
+      </name>
+      <width>
+        52.0f
+      </width>
+      <depth>
+        20.0f
+      </depth>
+      <widthSegments>
+        1
+      </widthSegments>
+      <depthSegments>
+        1
+      </depthSegments>
+      <color>
+        1.0f, 1.0f, 1.0f, 1.0f
+      </color>
+      <textureName>
+        SpaceWallTex
+      </textureName>
+      <shaderName>
+        TextureShader
+      </shaderName>
+    </otfs>   
+    
+    <otfs>
+      <name>
+        Back Wall
+      </name>
+      <width>
+        52.0f
+      </width>
+      <depth>
+        20.0f
+      </depth>
+      <widthSegments>
+        1
+      </widthSegments>
+      <depthSegments>
+        1
+      </depthSegments>
+      <color>
+        1.0f, 1.0f, 1.0f, 1.0f
+      </color>
+      <textureName>
+        SpaceWallTex
+      </textureName>
+      <shaderName>
+        TextureShader
+      </shaderName>
+    </otfs> 
+      
+    <otfs>
+      <name>
+        Left Wall
+      </name>
+      <width>
+        52.0f
+      </width>
+      <depth>
+        20.0f
+      </depth>
+      <widthSegments>
+        1
+      </widthSegments>
+      <depthSegments>
+        1
+      </depthSegments>
+      <color>
+        1.0f, 1.0f, 1.0f, 1.0f
+      </color>
+      <textureName>
+        SpaceWallTex
+      </textureName>
+      <shaderName>
+        TextureShader
+      </shaderName>
+    </otfs> 
+    
+      <otfs>
+      <name>
+        Right Wall
+      </name>
+      <width>
+        52.0f
+      </width>
+      <depth>
+        20.0f
+      </depth>
+      <widthSegments>
+        1
+      </widthSegments>
+      <depthSegments>
+        1
+      </depthSegments>
+      <color>
+        1.0f, 1.0f, 1.0f, 1.0f
+      </color>
+      <textureName>
+        SpaceWallTex
+      </textureName>
+      <shaderName>
+        TextureShader
+      </shaderName>
+    </otfs> 
+
+     !-- First Room
+    <construct>
+      <name>
+        First Room
+      </name>
+      <position>
+        0, 5.01f, 0
+      </position>
+      <visible>
+        true
+      </visible>
+      ! The floor
+      <surface>
+        <name>
+          Floor
+        </name>
+        <transforms>
+          TL, 0, -10, 0
+          RLy, 0, 90, 0
+        </transforms>
+      </surface>
+     !-- The Back Wall
+    <surface>
+      <name>
+        Back Wall
+      </name>
+      <transforms>
+        TL, 0, 0, -26
+        RLx, 90, 0, 0
+      </transforms>
+    </surface>
+     !-- The Front Wall
+    <surface>
+      <name>
+        Front Wall
+      </name>
+      <transforms>
+        TL, 0, 0, 26
+        RLx, -90, 0, 0
+      </transforms>
+    </surface>
+    !-- The Left Wall
+    <surface>
+      <name>
+        Left Wall
+      </name>
+      <transforms>
+        TL, -26, 0, 0
+        RLz, 0, 0, -90
+        RLy, 0, -90, 0
+      </transforms>
+    </surface>
+     !-- The Right Wall
+    <surface>
+      <name>
+        Right Wall
+      </name>
+      <transforms>
+        TL, 26, 0, 0
+        RLz, 0, 0, 90
+        RLy, 0, -90, 0
+      </transforms>
+    </surface>
+     !-- The Roof
+    <surface>
+      <name>
+        Roof
+      </name>
+      <transforms>
+        TL, 0, 10, 0
+        RLz, 0, 0, 180
+        RLy, 0, 90, 0
+      </transforms>
+    </surface>
+    </construct>  
+  </gameobjects>
+</assets>
+

@@ -1,0 +1,58 @@
+base
+width: 1.5
+depth: .25
+height: 1.5
+color: .69 .73 .76 1
+
+leftArm
+width: .5
+depth: 1
+height: .5
+color: .69 .73 .76 1
+
+leftHand
+width: .25
+depth: .25
+height: .25
+color: .69 .73 .76 1
+
+rightArm
+width: .5
+depth: 1
+height: .5
+color: .69 .73 .76 1
+
+rightHand
+width: .25
+depth: .25
+height: .25
+color: .69 .73 .76 1
+
+body
+width: .5
+depth: 1.5
+height: .5
+color: .69 .73 .76 1
+
+chest
+width: 1
+depth: .5
+height: .5
+color: .69 .73 .76 1
+
+head
+width: .5
+depth: .5
+height: .5
+color: .69 .73 .76 1
+
+laser
+width: .24
+depth: 1
+height: .24
+color: .69 .73 .76 1
+
+face
+width: .5
+height: .5
+color: 1 1 1 1
